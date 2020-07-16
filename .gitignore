@@ -1,2 +1,3 @@
 .ENV
+/jams_fhui/website/__pycache__/
 /jams_fhui/jams_fhui/__pycache__/
