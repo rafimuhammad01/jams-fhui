@@ -6,8 +6,8 @@ from django.http import HttpResponse
 def home(request):
 	return render(request, 'website/home.html')
 
-def lineup(request):
-	return render(request, 'website/lineup.html')
+def about(request):
+	return render(request, 'website/about.html')
 
 def schedule(request):
 	return render(request, 'website/schedule.html')
