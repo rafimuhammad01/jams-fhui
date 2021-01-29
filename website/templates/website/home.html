@@ -49,20 +49,38 @@
 			src: url('{% static 'website/font/InknutAntiqua-Medium.ttf' %}');
 		}
 
-		@media screen and (max-width: 600px) {
-			div.example {
-				font-size: 30px;
-			}
+		.row {
+			margin:auto!important
 		}
 
-
-		
 
 		h1 {
 			text-align: center; 
 			color:#FFE8DB !important; 
 			font-family:bigjohnpro-bold !important ;
 		}
+
+		h2 {
+			text-align: center; 
+			color:#FFE8DB !important; 
+			font-family: InknutAntiqua-Medium!important; 
+			font-size: clamp(12px, 1.5vw, 20px)!important;
+		}
+
+		#days, #welcome {
+			font-size: clamp(40px, 4vw, 75px)!important;
+		}
+
+		#secs, #mins, #hours {
+			font-size: clamp(40px, 3.2vw, 75px) !important;
+		}
+
+		#togo{
+			font-size: clamp(25px, 3vw, 75px)!important;
+		}
+		
+
+		
 	</style>
 {% endblock %}
 {% block body%}
@@ -71,7 +89,7 @@
 	<div class=container>
 		<div style="margin:auto" class="row justify-content-center">
 			<div class="col-12">
-				<h1>WELCOME TO JAMS 2021</h1>
+				<h1 id='welcome'>WELCOME TO JAMS 2021</h1>
 			</div>
 		</div>
 		<br>
@@ -85,34 +103,34 @@
 		<br>
 		<div clas=row style="">
 			<div class=col-12>
-				<div><h1 id= "days" style="font-size: clamp(40px, 6vw, 2000px);">99</h1></div>
+				<div><h1  class= "date" id= "days">99</h1></div>
 			</div>
 		</div>
 		<div clas=row>
 			<div class=col-12>
-				<div><h1 style="font-family: InknutAntiqua-Medium!important; font-size: clamp(12px, 2.5vw, 2000px);">DAYS</h1></div>
+				<div><h2  class= "date">DAYS</h></div>
 			</div>
 		</div>
 		<br>
 
 		<div class="row justify-content-center">
 			<div class=col-3 >
-				<h1 id="hours" style="font-size: clamp(40px, 6vw, 2000px);">23</h1>
-				<h1 style="font-family: InknutAntiqua-Medium!important; font-size: clamp(12px, 2.5vw, 2000px);">HOURS</h1>
+				<h1  class= "date" id="hours" >23</h1>
+				<h2  class= "date" >HOURS</h2>
 			</div>
 			<div class=col-1>
-				<h1 style="font-size: clamp(40px, 6vw, 2000px);">:</h1>
+				<h1 >:</h1>
 			</div>
 			<div class=col-3>
-				<h1 id="mins" style="font-size: clamp(40px, 6vw, 2000px);">59</h1>
-				<h1 style="font-family: InknutAntiqua-Medium!important; font-size: clamp(12px, 2.5vw, 2000px);">MINUTES</h1>
+				<h1  class= "date" id="mins">59</h1>
+				<h2 class= "date">MINUTES</h2>
 			</div>
 			<div class=col-1>
-				<h1 style="font-size: clamp(40px, 6vw, 2000px);">:</h1>
+				<h1>:</h1>
 			</div>
 			<div class=col-3>
-				<h1 id="secs" style="font-size: clamp(40px, 6vw, 2000px);">59</h1>
-				<h1 style="font-family: InknutAntiqua-Medium!important; font-size: clamp(12px, 2.5vw, 2000px);">SECONDS</h1>
+				<h1  class= "date" id="secs">59</h1>
+				<h2  class= "date" >SECONDS</h2>
 			</div>
 		</div>
 		<br>
@@ -120,7 +138,7 @@
 
 		<div class=row>
 			<div class=col>
-				<h1 style="font-family: InknutAntiqua-Medium!important; font-size: clamp(20px, 3.5vw, 2000px);">TO GO</h1>
+				<h2  class= "date" id="togo">TO GO</h2>
 			</div>
 		</div>
 	</div>
