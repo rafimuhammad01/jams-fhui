@@ -4,6 +4,8 @@
 
 {% block title%} 
 	<title> About </title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&display=swap" rel="stylesheet">
 	<style>
 		@font-face {
 				font-family: "bigjohnpro-bold";
@@ -14,6 +16,7 @@
 			font-family: "InknutAntiqua-Medium";
 			src: url('{% static 'website/font/InknutAntiqua-Medium.ttf' %}');
 		}
+
 	
 		h1 {
 			text-align: center; 
@@ -21,20 +24,50 @@
 			font-family:bigjohnpro-bold !important ;
 			font-size: clamp(40px, 4vw, 75px)!important;
 		}
+
+		.logo img {
+			width: 100%;
+		}
+
+		p {
+			color:#FFE8DB !important; 
+			font-family: 'Istok Web', sans-serif; ;
+			font-size: 20px
+		}
+
 	</style>
 {% endblock %}
 
 {% block body%}
-	<div style="" class=container>
+	<div style="max-width: 970px;" class=container>
 		<div class=row>
 			<div class=col-12>
 				<h1>ABOUT</h1>
 			</div>
 		</div>
+		<br>
 		<div style="margin: auto; min-height: 60vh;" class="row align-items-center">
-			<div style="margin:0px; padding: 0%;" class="col-12 align-self-center">
+			<div class="col-lg-4 col-12 col-sm-12 logo">
+				<img src="{% static 'website/img/LOGO JAMS CROP.png' %}" alt="">
+			</div>
+			<div class="col-lg-8 col-12 col-sm-12">
+			
+				<p class="text-justify">
+				 	<b>Justice Art and Music on Stage (JAMS)</b>  is an annual event presented by PERFILMA FH UI that aims to raise awareness about current issues happening in our society through art and music.
+				</p>
+				<p class="text-justify">
+					With the tagline “Lead the Scene, Keep It Green”, JAMS 2021 is back to maintain a clean and habitable environment for generations to come.
 				
-				<img style="max-height: 100%;max-width: 100%;" src="{% static 'website/img/coming soon.png' %}" alt="">
+				</p>
+				
+				
+			</div>
+
+			<div class="col-12 col-md-12 col-sm-12">
+				<p class="text-justify">
+					Bringing "A Pledge to Our World" as our theme, JAMS 2021 is held to raise awareness about the arising environmental problems, specifically about deforestation, biodiversity loss, and waste as it is our responsibility to protect and heal our environment.
+			
+				</p>
 			</div>
 		</div>
 	</div>
