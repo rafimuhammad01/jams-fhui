@@ -10,4 +10,5 @@ urlpatterns = [
     path('gallery/', views.gallery, name='gallery'),
     path('info/', views.info, name='info'),
     path('contact/', views.contact, name='contact'),
+    path('fetcher/', views.getRecentPosts, name='getRecentPosts')
 ]
