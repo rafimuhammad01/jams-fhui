@@ -1,10 +1,63 @@
 {% extends 'website/navbar.html'%}
 
+{% load static %}
 
 {% block title%} 
-	<title>Contact</title>
+<title>Contact</title>
+<link href="https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'website/css/main.css' %}">
+<link rel="stylesheet" href="{% static 'website/css/contact.css' %}">
+
 {% endblock %}
 
 {% block body%}
-	<h1>Contact</h1>
+
+
+<br>
+<br>
+<div class=container>
+	<div style="margin:auto" class="row justify-content-center">
+		<div class="col-12">
+			<h1 id="main-title">GET IN TOUCH!</h1>
+		</div>
+	</div>
+	<br>
+	<br>
+	<div style="margin: auto; min-height: 60vh;" class="row align-items-center">
+		<div class="col-lg-6 col-12 col-sm-12">
+			<img src="{% static 'website/img/CONTACT-MAINPICT.svg' %}" alt="" id="contact-gedungperfilma">
+		</div>
+		<div class="col-lg-6 col-12 col-sm-12">
+			<img src="{% static 'website/img/Perfilma FHUI.png' %}" alt="" id="contact-labelperfilma">
+		
+			<p class="text-justify" id="contact-address">
+				Student Center PERFILMA FH UI, 1st Floor of Building F, 
+				Faculty of Law, Universitas Indonesia, Depok 16422 <br><br>
+				justiceartmusiconstage@gmail.com (temporary) <br><br>
+				+62 21 XXXX XXXX
+			</p>
+
+			<div>
+				<a href="https://www.instagram.com/jams.fhui/" target="_blank">
+					<img src="{% static 'website/img/LOGO-IG.svg' %}" alt="" class="contact-socmed">
+				</a>
+				<a href="">
+					<img src="{% static 'website/img/LOGO-LINE.svg' %}" alt="" class="contact-socmed">
+				</a>				
+				<a href="https://twitter.com/jams_fhui" target="_blank">
+					<img src="{% static 'website/img/LOGO-TWT.svg' %}" alt="" class="contact-socmed">
+				</a>
+				<a href="https://open.spotify.com/user/99qeb3ytqownomywn9rsxxgce" target="_blank">
+					<img src="{% static 'website/img/LOGO-SPTFY.svg' %}" alt="" class="contact-socmed">
+				</a>
+				<a href="https://www.youtube.com/user/perfilmafhui" target="_blank">
+					<img src="{% static 'website/img/LOGO-YT.svg' %}" alt="" class="contact-socmed">
+				</a>
+			</div>
+		</div>
+
+	</div>
+<br>
+<br>
+<br>
 {% endblock %}
