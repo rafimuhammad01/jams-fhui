@@ -44,4 +44,5 @@ def getRecentPosts(request):
 		return JsonResponse(posts, safe=False)
 	else:
 		return HttpResponseNotFound
+		
 
