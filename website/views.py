@@ -30,7 +30,7 @@ def info(request):
 	return render(request, 'website/info.html', context)
 
 def contact (request):
-  context = {'page':'contact'}
+ 	context = {'page':'contact'}
 	return render(request, 'website/contact.html', context)
 
 def getRecentPosts(request):
