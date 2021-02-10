@@ -35,11 +35,12 @@ def contact (request):
 
 def getRecentPosts(request):
 	if request.is_ajax():
-		data_id_json = requests.get('https://graph.instagram.com/me/media?fields=id&access_token=' + os.environ.get('SECRET_INSTA_KEY')).json()
+		INSTA_KEY = 'IGQVJWMDRnWnZAJTmlnWm9lM2NmRDJLNHFjeUdNT2ZAWaEI5OV9rZAEZA1WHpOei1wVlAxQmNJTVlxM2pkUnVWRDhYMnR0a3FQU0pIUUo4QlMwdGRQdEoxTjVLVTBWVlZAtbmxMNjVXMlhHQTZAjZAVlFeG9FMwZDZD'
+		data_id_json = requests.get('https://graph.instagram.com/me/media?fields=id&access_token=' + INSTA_KEY).json()
 		posts = []
-		for i in range(5):
+		for i in range(6):
 			post_id = data_id_json['data'][i]['id']
-			post_detail = requests.get('https://graph.instagram.com/' + post_id + '?fields=id,media_type,media_url,caption,permalink,thumbnail_url,timestamp,username&access_token=' + os.environ.get('SECRET_INSTA_KEY')).json()
+			post_detail = requests.get('https://graph.instagram.com/' + post_id + '?fields=id,media_type,media_url,caption,permalink,thumbnail_url,timestamp,username&access_token=' + INSTA_KEY).json()
 			posts.append(post_detail)
 		return JsonResponse(posts, safe=False)
 	else:
