@@ -6,25 +6,32 @@ import requests
 # Create your views here.
 
 def home(request):
-	return render(request, 'website/home.html')
+	context = {'page':'home'}
+	return render(request, 'website/home.html', context)
 
 def about(request):
-	return render(request, 'website/about.html')
+	context = {'page':'about'}
+	return render(request, 'website/about.html', context)
 
 def schedule(request):
-	return render(request, 'website/schedule.html')
+	context = {'page':'schedule'}
+	return render(request, 'website/schedule.html', context)
 
-def ticket(request):
-	return render(request, 'website/ticket.html')
+def ticket(request): #not used
+	context = {'page':'ticket'}
+	return render(request, 'website/ticket.html', context)
 
 def gallery(request):
-	return render(request, 'website/gallery.html')
+	context = {'page':'gallery'}
+	return render(request, 'website/gallery.html', context)
 
 def info(request):
-	return render(request, 'website/info.html')
+	context = {'page':'info'}
+	return render(request, 'website/info.html', context)
 
 def contact (request):
-	return render(request, 'website/contact.html')
+	context = {'page':'contact'}
+	return render(request, 'website/contact.html', context)
 
 def getRecentPosts(request):
 	if request.is_ajax():
@@ -38,3 +45,5 @@ def getRecentPosts(request):
 		return JsonResponse(posts, safe=False)
 	else:
 		return HttpResponseNotFound
+		
+

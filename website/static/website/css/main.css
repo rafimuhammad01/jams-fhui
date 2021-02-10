@@ -1,0 +1,29 @@
+.row {
+    margin:auto!important
+}
+
+h1 {
+    text-align: center; 
+    color:#FFE8DB !important; 
+    font-family:bigjohnpro-bold !important ;
+}
+
+h2 {
+    text-align: center; 
+    color:#FFE8DB !important; 
+    font-family: InknutAntiqua-Medium!important; 
+    font-size: clamp(12px, 1.5vw, 20px)!important;
+}
+
+p {
+    color:#FFE8DB !important; 
+    font-family: 'Istok Web', sans-serif; ;
+    font-size: 20px
+}
+
+img {
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+  }
