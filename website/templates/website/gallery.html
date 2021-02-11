@@ -47,6 +47,12 @@
 				success: function(data) {
 					var post_detail = data;
 					var permalink_first = post_detail[0].permalink;
+					$("#judul-post-ig").html(
+						`<div class="col-12">
+							<h1>LATEST POST</h1>
+						</div>`
+
+					)
 					$('#post_ig').html(
 						'<div class="col-md-6">' + 
 							'<blockquote class="instagram-media" data-instgrm-permalink="' + permalink_first + '?utm_source=ig_embed&amp;utm_campaign=loading"' +
@@ -58,6 +64,8 @@
 						'</div>'
 						
 					);
+
+
 					window.instgrm.Embeds.process()
 
 					//console.log(permalink_first);
@@ -138,9 +146,8 @@
 	<br>
 	<br>
 	<br>
-	<div class="row">
+	<div class="row" id="judul-post-ig">
 		<div class="col-12">
-			<h1>LATEST POST</h1>
 		</div>
 
 	</div>
