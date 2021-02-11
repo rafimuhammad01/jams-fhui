@@ -85,9 +85,9 @@
     {% block body %}
     {% endblock%}
     
-    <br>
     
-
+    {% if page != "contact" %}
+    <br>
     <footer class="footer container text-center">
         
         <div>
@@ -111,8 +111,13 @@
             
 		</div>
     </footer>
-
     <br>
+    {% endif %}
+    
+
+    
+
+    
     
 
 </body>
