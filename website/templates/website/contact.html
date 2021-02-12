@@ -8,6 +8,29 @@
 <link rel="stylesheet" href="{% static 'website/css/main.css' %}">
 <link rel="stylesheet" href="{% static 'website/css/contact.css' %}">
 
+<style>
+	p.form_text1>span {
+		display: inline-block;
+		min-width: 135px;
+		font-weight: bold;
+		
+	}
+	p.form_text1>a {
+		color: #FFE8DB;
+		background-color: transparent;
+		text-decoration: none;
+		
+	}
+
+	p.form_text1>a:hover {
+		color: #FFE8DB;
+		background-color: transparent;
+		text-decoration: none;
+		font-weight: bold;
+		
+	}
+</style>
+
 {% endblock %}
 
 {% block body%}
@@ -33,8 +56,13 @@
 			<p class="text-justify" id="contact-address">
 				Student Center PERFILMA FH UI, 1st Floor of Building F, 
 				Faculty of Law, Universitas Indonesia, Depok 16422 <br><br>
-				justiceartmusiconstage@gmail.com  <br><br>
+			
+				<p class="form_text1" style="margin-bottom:0px;"><span>Email</span>: <a href="mailto:justiceartmusiconstage@gmail.com">justiceartmusiconstage@gmail.com</a> </p>
+				<p class="form_text1" style="margin-bottom:0px;"><span>Media Partner</span>:  <a href="mailto:mediapartner.jams2021@gmail.com">mediapartner.jams2021@gmail.com</a> </p>
+				<p class="form_text1" style="margin-bottom:0px;"><span>Sponsorship</span>:   <a href="mailto:sponsorship.jams2021@gmail.com">sponsorship.jams2021@gmail.com</a>  </p>
+				<p class="form_text1" style="margin-bottom:0px;"><span>Tenants</span>:  <a href="mailto:tenants.jams2021@gmail.com">tenants.jams2021@gmail.com</a>  </p>
 			</p>
+			<br>
 
 			<div>
 				<a href="https://www.instagram.com/jams.fhui/" target="_blank">
