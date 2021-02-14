@@ -2,6 +2,7 @@
 /jams_fhui/website/__pycache__/
 /jams_fhui/jams_fhui/__pycache__/
 SPK_Website_JAMS_2021.docx
+.vscode/
 
 
 django-template-heroku-template.*

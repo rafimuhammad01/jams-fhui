@@ -1,0 +1,73 @@
+{% extends 'website/navbar.html'%}
+{% load static %}
+
+
+{% block title%} 
+	<title> About </title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&display=swap" rel="stylesheet">
+	<style>
+		@font-face {
+				font-family: "bigjohnpro-bold";
+				src: url('{% static 'website/font/bigjohnpro-bold.otf' %}');
+			}
+	
+		@font-face {
+			font-family: "InknutAntiqua-Medium";
+			src: url('{% static 'website/font/InknutAntiqua-Medium.ttf' %}');
+		}
+
+	
+		h1 {
+			text-align: center; 
+			color:#FFE8DB !important; 
+			font-family:bigjohnpro-bold !important ;
+			font-size: clamp(40px, 4vw, 75px)!important;
+		}
+
+		.logo img {
+			width: 100%;
+		}
+
+		p {
+			color:#FFE8DB !important; 
+			font-family: 'Istok Web', sans-serif; ;
+			font-size: 20px
+		}
+
+	</style>
+{% endblock %}
+
+{% block body%}
+	<br>
+	<br>
+	<div style="max-width: 970px;" class=container>
+		<div class=row>
+			<div class=col-12>
+				<h1>ABOUT</h1>
+			</div>
+		</div>
+		<div style="margin: auto; min-height: 25rem;" class="row align-items-center">
+			<div class="col-lg-4 col-12 col-sm-12 logo">
+				<img src="{% static 'website/img/LOGO JAMS CROP.png' %}" alt="">
+			</div>
+			<br>
+			<br>
+			<div class="col-lg-8 col-12 col-sm-12">
+			
+				<p class="text-justify">
+				 	<b>Justice Art and Music on Stage (JAMS)</b>  is an annual event presented by PERFILMA FH UI that aims to raise awareness about social issues, and this year we take matters regarding the environmental problems, specifically about deforestation, biodiversity loss, and waste.
+				</p>
+				
+				
+			</div>
+
+			<div class="col-12 col-md-12 col-sm-12">
+				<p class="text-justify">
+					With the tagline “Lead the Scene, Keep It Green”, JAMS 2021 aims to propogate clean and habitable environment for generations to come, because we believe it is our responsibility to protect and to heal our environment.
+				
+				</p>
+			</div>
+		</div>
+	</div>
+{% endblock %}

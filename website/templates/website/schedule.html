@@ -1,10 +1,41 @@
 {% extends 'website/navbar.html'%}
-
+{%load static%}
 
 {% block title%} 
 	<title>Schedule</title>
+	<style>
+		@font-face {
+				font-family: "bigjohnpro-bold";
+				src: url('{% static 'website/font/bigjohnpro-bold.otf' %}');
+			}
+	
+		@font-face {
+			font-family: "InknutAntiqua-Medium";
+			src: url('{% static 'website/font/InknutAntiqua-Medium.ttf' %}');
+		}
+	
+		h1 {
+			text-align: center; 
+			color:#FFE8DB !important; 
+			font-family:bigjohnpro-bold !important ;
+			font-size: clamp(40px, 4vw, 75px)!important;
+		}
+	</style>
 {% endblock %}
 
+
+
 {% block body%}
-	<h1>Schedule</h1>
+<div style="" class=container>
+	<div class=row>
+		<div class=col-12>
+			<h1>SCHEDULE</h1>
+		</div>
+	</div>
+	<div style="margin: auto;" class=" align-items-center">
+		<div class="text-center">
+			<img style="max-height: 60vh;" src="{% static 'website/img/jamming soon website copycrop.png'%}" class="img-fluid mx-auto d-block" alt="...">
+		</div>
+	</div>
+</div>
 {% endblock %}
